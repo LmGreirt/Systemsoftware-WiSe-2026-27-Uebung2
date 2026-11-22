@@ -13,4 +13,4 @@ Data Race: Mehrere Threads greifen gleichzeitig auf die gleiche Speicherinstanz 
 
 Race Condition: Das Programmverhalten hängt von der Abfolge der Threads ab.
 
-b) Da der Zugriff auf counter nicht atomar ist, kommt es zu Data Races. Durch die zufällige sleep() Funktion wird die Wahrscheinlichkeit erhöht, dass ein thread den counter liest, in temp speichert, dann schläft und ein anderer thread den counter verändert. Wenn der erste thread aufwacht, zerstört er die Änderung des zweitern treads.
+b) Da der Zugriff auf counter nicht atomar ist, kommt es zu Data Races. Durch die zufällige sleep() Funktion wird die Wahrscheinlichkeit erhöht, dass ein thread den counter liest, in temp speichert, dann schläft und ein anderer thread den counter verändert. Wenn der erste thread aufwacht, zerstört er die Änderung des zweiten treads.
